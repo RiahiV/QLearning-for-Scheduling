@@ -1,0 +1,7 @@
+States: For the agent, the definition of the state will coincide with the jobs that have finished and the order in which they were done, that is, the sequence that has been built. This means that at the beginning of an episode, the state of the environment is empty, since no work has been added to the sequence; therefore, at the end of the episode the state of the environment will be given by all the sequenced works.
+Actions: 
+•	Action 1: pick job 1
+•	Action 2: pick job 2
+•	Action 3: pick job 3
+•	…
+Rewards: As described, the state is represented by the sequence that has been built, an action constitutes inserting a new job in said sequence and taking into account that our final objective is to minimize the makespan; We define reward 1/𝑚𝑎𝑘𝑒𝑠𝑝𝑎𝑛, note that the greater the makespan of the sequence, the lower the reward for the selected action. It should be noted then that the highest Q-value determines the best action in any state.
